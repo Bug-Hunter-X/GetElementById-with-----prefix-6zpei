@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    //Correct way to select element
+    const myDiv = document.getElementById('myDiv');
+    if (myDiv) {
+      myDiv.style.display = "none";
+    }
+  </script>
+</body>
+</html>
